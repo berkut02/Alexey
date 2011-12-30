@@ -24,7 +24,7 @@ namespace Alexey {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class alexeyDataSet1 : global::System.Data.DataSet {
         
-        private alexeyDataTable tablealexey;
+        private vAlexeyDataTable tablevAlexey;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace Alexey {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["alexey"] != null)) {
-                    base.Tables.Add(new alexeyDataTable(ds.Tables["alexey"]));
+                if ((ds.Tables["vAlexey"] != null)) {
+                    base.Tables.Add(new vAlexeyDataTable(ds.Tables["vAlexey"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Alexey {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public alexeyDataTable alexey {
+        public vAlexeyDataTable vAlexey {
             get {
-                return this.tablealexey;
+                return this.tablevAlexey;
             }
         }
         
@@ -152,8 +152,8 @@ namespace Alexey {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["alexey"] != null)) {
-                    base.Tables.Add(new alexeyDataTable(ds.Tables["alexey"]));
+                if ((ds.Tables["vAlexey"] != null)) {
+                    base.Tables.Add(new vAlexeyDataTable(ds.Tables["vAlexey"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Alexey {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablealexey = ((alexeyDataTable)(base.Tables["alexey"]));
+            this.tablevAlexey = ((vAlexeyDataTable)(base.Tables["vAlexey"]));
             if ((initTable == true)) {
-                if ((this.tablealexey != null)) {
-                    this.tablealexey.InitVars();
+                if ((this.tablevAlexey != null)) {
+                    this.tablevAlexey.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace Alexey {
             this.Namespace = "http://tempuri.org/alexeyDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablealexey = new alexeyDataTable();
-            base.Tables.Add(this.tablealexey);
+            this.tablevAlexey = new vAlexeyDataTable();
+            base.Tables.Add(this.tablevAlexey);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializealexey() {
+        private bool ShouldSerializevAlexey() {
             return false;
         }
         
@@ -270,14 +270,14 @@ namespace Alexey {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void alexeyRowChangeEventHandler(object sender, alexeyRowChangeEvent e);
+        public delegate void vAlexeyRowChangeEventHandler(object sender, vAlexeyRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class alexeyDataTable : global::System.Data.TypedTableBase<alexeyRow> {
+        public partial class vAlexeyDataTable : global::System.Data.TypedTableBase<vAlexeyRow> {
             
             private global::System.Data.DataColumn columnname;
             
@@ -285,10 +285,12 @@ namespace Alexey {
             
             private global::System.Data.DataColumn columntsena;
             
+            private global::System.Data.DataColumn columnsumma;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public alexeyDataTable() {
-                this.TableName = "alexey";
+            public vAlexeyDataTable() {
+                this.TableName = "vAlexey";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -296,7 +298,7 @@ namespace Alexey {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal alexeyDataTable(global::System.Data.DataTable table) {
+            internal vAlexeyDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -313,7 +315,7 @@ namespace Alexey {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected alexeyDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected vAlexeyDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -344,6 +346,14 @@ namespace Alexey {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn summaColumn {
+                get {
+                    return this.columnsumma;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -353,47 +363,48 @@ namespace Alexey {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public alexeyRow this[int index] {
+            public vAlexeyRow this[int index] {
                 get {
-                    return ((alexeyRow)(this.Rows[index]));
+                    return ((vAlexeyRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event alexeyRowChangeEventHandler alexeyRowChanging;
+            public event vAlexeyRowChangeEventHandler vAlexeyRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event alexeyRowChangeEventHandler alexeyRowChanged;
+            public event vAlexeyRowChangeEventHandler vAlexeyRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event alexeyRowChangeEventHandler alexeyRowDeleting;
+            public event vAlexeyRowChangeEventHandler vAlexeyRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event alexeyRowChangeEventHandler alexeyRowDeleted;
+            public event vAlexeyRowChangeEventHandler vAlexeyRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddalexeyRow(alexeyRow row) {
+            public void AddvAlexeyRow(vAlexeyRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public alexeyRow AddalexeyRow(string name, int kolvo, double tsena) {
-                alexeyRow rowalexeyRow = ((alexeyRow)(this.NewRow()));
+            public vAlexeyRow AddvAlexeyRow(string name, int kolvo, double tsena, double summa) {
+                vAlexeyRow rowvAlexeyRow = ((vAlexeyRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         name,
                         kolvo,
-                        tsena};
-                rowalexeyRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowalexeyRow);
-                return rowalexeyRow;
+                        tsena,
+                        summa};
+                rowvAlexeyRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowvAlexeyRow);
+                return rowvAlexeyRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                alexeyDataTable cln = ((alexeyDataTable)(base.Clone()));
+                vAlexeyDataTable cln = ((vAlexeyDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -401,7 +412,7 @@ namespace Alexey {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new alexeyDataTable();
+                return new vAlexeyDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -410,6 +421,7 @@ namespace Alexey {
                 this.columnname = base.Columns["name"];
                 this.columnkolvo = base.Columns["kolvo"];
                 this.columntsena = base.Columns["tsena"];
+                this.columnsumma = base.Columns["summa"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -421,36 +433,37 @@ namespace Alexey {
                 base.Columns.Add(this.columnkolvo);
                 this.columntsena = new global::System.Data.DataColumn("tsena", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columntsena);
+                this.columnsumma = new global::System.Data.DataColumn("summa", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnsumma);
                 this.columnname.AllowDBNull = false;
                 this.columnname.MaxLength = 255;
-                this.columnkolvo.AllowDBNull = false;
-                this.columntsena.AllowDBNull = false;
+                this.columnsumma.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public alexeyRow NewalexeyRow() {
-                return ((alexeyRow)(this.NewRow()));
+            public vAlexeyRow NewvAlexeyRow() {
+                return ((vAlexeyRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new alexeyRow(builder);
+                return new vAlexeyRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(alexeyRow);
+                return typeof(vAlexeyRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.alexeyRowChanged != null)) {
-                    this.alexeyRowChanged(this, new alexeyRowChangeEvent(((alexeyRow)(e.Row)), e.Action));
+                if ((this.vAlexeyRowChanged != null)) {
+                    this.vAlexeyRowChanged(this, new vAlexeyRowChangeEvent(((vAlexeyRow)(e.Row)), e.Action));
                 }
             }
             
@@ -458,8 +471,8 @@ namespace Alexey {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.alexeyRowChanging != null)) {
-                    this.alexeyRowChanging(this, new alexeyRowChangeEvent(((alexeyRow)(e.Row)), e.Action));
+                if ((this.vAlexeyRowChanging != null)) {
+                    this.vAlexeyRowChanging(this, new vAlexeyRowChangeEvent(((vAlexeyRow)(e.Row)), e.Action));
                 }
             }
             
@@ -467,8 +480,8 @@ namespace Alexey {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.alexeyRowDeleted != null)) {
-                    this.alexeyRowDeleted(this, new alexeyRowChangeEvent(((alexeyRow)(e.Row)), e.Action));
+                if ((this.vAlexeyRowDeleted != null)) {
+                    this.vAlexeyRowDeleted(this, new vAlexeyRowChangeEvent(((vAlexeyRow)(e.Row)), e.Action));
                 }
             }
             
@@ -476,14 +489,14 @@ namespace Alexey {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.alexeyRowDeleting != null)) {
-                    this.alexeyRowDeleting(this, new alexeyRowChangeEvent(((alexeyRow)(e.Row)), e.Action));
+                if ((this.vAlexeyRowDeleting != null)) {
+                    this.vAlexeyRowDeleting(this, new vAlexeyRowChangeEvent(((vAlexeyRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemovealexeyRow(alexeyRow row) {
+            public void RemovevAlexeyRow(vAlexeyRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -510,7 +523,7 @@ namespace Alexey {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "alexeyDataTable";
+                attribute2.FixedValue = "vAlexeyDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -554,25 +567,25 @@ namespace Alexey {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class alexeyRow : global::System.Data.DataRow {
+        public partial class vAlexeyRow : global::System.Data.DataRow {
             
-            private alexeyDataTable tablealexey;
+            private vAlexeyDataTable tablevAlexey;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal alexeyRow(global::System.Data.DataRowBuilder rb) : 
+            internal vAlexeyRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablealexey = ((alexeyDataTable)(this.Table));
+                this.tablevAlexey = ((vAlexeyDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string name {
                 get {
-                    return ((string)(this[this.tablealexey.nameColumn]));
+                    return ((string)(this[this.tablevAlexey.nameColumn]));
                 }
                 set {
-                    this[this.tablealexey.nameColumn] = value;
+                    this[this.tablevAlexey.nameColumn] = value;
                 }
             }
             
@@ -580,10 +593,15 @@ namespace Alexey {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int kolvo {
                 get {
-                    return ((int)(this[this.tablealexey.kolvoColumn]));
+                    try {
+                        return ((int)(this[this.tablevAlexey.kolvoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'kolvo\' in table \'vAlexey\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tablealexey.kolvoColumn] = value;
+                    this[this.tablevAlexey.kolvoColumn] = value;
                 }
             }
             
@@ -591,11 +609,68 @@ namespace Alexey {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public double tsena {
                 get {
-                    return ((double)(this[this.tablealexey.tsenaColumn]));
+                    try {
+                        return ((double)(this[this.tablevAlexey.tsenaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'tsena\' in table \'vAlexey\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tablealexey.tsenaColumn] = value;
+                    this[this.tablevAlexey.tsenaColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double summa {
+                get {
+                    try {
+                        return ((double)(this[this.tablevAlexey.summaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'summa\' in table \'vAlexey\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablevAlexey.summaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IskolvoNull() {
+                return this.IsNull(this.tablevAlexey.kolvoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetkolvoNull() {
+                this[this.tablevAlexey.kolvoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IstsenaNull() {
+                return this.IsNull(this.tablevAlexey.tsenaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SettsenaNull() {
+                this[this.tablevAlexey.tsenaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IssummaNull() {
+                return this.IsNull(this.tablevAlexey.summaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetsummaNull() {
+                this[this.tablevAlexey.summaColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -603,22 +678,22 @@ namespace Alexey {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class alexeyRowChangeEvent : global::System.EventArgs {
+        public class vAlexeyRowChangeEvent : global::System.EventArgs {
             
-            private alexeyRow eventRow;
+            private vAlexeyRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public alexeyRowChangeEvent(alexeyRow row, global::System.Data.DataRowAction action) {
+            public vAlexeyRowChangeEvent(vAlexeyRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public alexeyRow Row {
+            public vAlexeyRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -646,7 +721,7 @@ namespace Alexey.alexeyDataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class alexeyTableAdapter : global::System.ComponentModel.Component {
+    public partial class vAlexeyTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -660,7 +735,7 @@ namespace Alexey.alexeyDataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public alexeyTableAdapter() {
+        public vAlexeyTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -757,19 +832,12 @@ namespace Alexey.alexeyDataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "alexey";
+            tableMapping.DataSetTable = "vAlexey";
             tableMapping.ColumnMappings.Add("name", "name");
             tableMapping.ColumnMappings.Add("kolvo", "kolvo");
             tableMapping.ColumnMappings.Add("tsena", "tsena");
+            tableMapping.ColumnMappings.Add("summa", "summa");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[alexey] ([name], [kolvo], [tsena]) VALUES (@name, @kolvo, @tse" +
-                "na)";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@kolvo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "kolvo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tsena", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tsena", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -785,7 +853,7 @@ namespace Alexey.alexeyDataSet1TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT name, kolvo, tsena FROM dbo.alexey";
+            this._commandCollection[0].CommandText = "SELECT name, kolvo, tsena, summa FROM dbo.vAlexey";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -793,7 +861,7 @@ namespace Alexey.alexeyDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(alexeyDataSet1.alexeyDataTable dataTable) {
+        public virtual int Fill(alexeyDataSet1.vAlexeyDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -806,69 +874,11 @@ namespace Alexey.alexeyDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual alexeyDataSet1.alexeyDataTable GetData() {
+        public virtual alexeyDataSet1.vAlexeyDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            alexeyDataSet1.alexeyDataTable dataTable = new alexeyDataSet1.alexeyDataTable();
+            alexeyDataSet1.vAlexeyDataTable dataTable = new alexeyDataSet1.vAlexeyDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(alexeyDataSet1.alexeyDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(alexeyDataSet1 dataSet) {
-            return this.Adapter.Update(dataSet, "alexey");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string name, int kolvo, double tsena) {
-            if ((name == null)) {
-                throw new global::System.ArgumentNullException("name");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(name));
-            }
-            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(kolvo));
-            this.Adapter.InsertCommand.Parameters[2].Value = ((double)(tsena));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
         }
     }
     
@@ -884,8 +894,6 @@ namespace Alexey.alexeyDataSet1TableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private alexeyTableAdapter _alexeyTableAdapter;
-        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -898,20 +906,6 @@ namespace Alexey.alexeyDataSet1TableAdapters {
             }
             set {
                 this._updateOrder = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
-            "a", "System.Drawing.Design.UITypeEditor")]
-        public alexeyTableAdapter alexeyTableAdapter {
-            get {
-                return this._alexeyTableAdapter;
-            }
-            set {
-                this._alexeyTableAdapter = value;
             }
         }
         
@@ -934,10 +928,6 @@ namespace Alexey.alexeyDataSet1TableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._alexeyTableAdapter != null) 
-                            && (this._alexeyTableAdapter.Connection != null))) {
-                    return this._alexeyTableAdapter.Connection;
-                }
                 return null;
             }
             set {
@@ -951,9 +941,6 @@ namespace Alexey.alexeyDataSet1TableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._alexeyTableAdapter != null)) {
-                    count = (count + 1);
-                }
                 return count;
             }
         }
@@ -965,15 +952,6 @@ namespace Alexey.alexeyDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateUpdatedRows(alexeyDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._alexeyTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.alexey.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._alexeyTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             return result;
         }
         
@@ -984,14 +962,6 @@ namespace Alexey.alexeyDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateInsertedRows(alexeyDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._alexeyTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.alexey.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._alexeyTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             return result;
         }
         
@@ -1002,14 +972,6 @@ namespace Alexey.alexeyDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateDeletedRows(alexeyDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._alexeyTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.alexey.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._alexeyTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             return result;
         }
         
@@ -1049,11 +1011,6 @@ namespace Alexey.alexeyDataSet1TableAdapters {
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._alexeyTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._alexeyTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
-                        "tring.");
-            }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
                 throw new global::System.ApplicationException("TableAdapterManager contains no connection information. Set each TableAdapterMana" +
@@ -1086,15 +1043,6 @@ namespace Alexey.alexeyDataSet1TableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._alexeyTableAdapter != null)) {
-                    revertConnections.Add(this._alexeyTableAdapter, this._alexeyTableAdapter.Connection);
-                    this._alexeyTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._alexeyTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._alexeyTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._alexeyTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._alexeyTableAdapter.Adapter);
-                    }
-                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1152,10 +1100,6 @@ namespace Alexey.alexeyDataSet1TableAdapters {
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
-                }
-                if ((this._alexeyTableAdapter != null)) {
-                    this._alexeyTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._alexeyTableAdapter]));
-                    this._alexeyTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

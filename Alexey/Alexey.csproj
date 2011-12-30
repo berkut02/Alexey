@@ -51,24 +51,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>alexeyDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="alexeyDataSet1.cs">
-      <DependentUpon>alexeyDataSet1.xsd</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="alexeyDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>alexeyDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="alexeyDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>alexeyDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="alexeyDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>alexeyDataSet3.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -111,28 +97,6 @@
     </None>
     <None Include="alexeyDataSet1.xss">
       <DependentUpon>alexeyDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="alexeyDataSet2.xsc">
-      <DependentUpon>alexeyDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="alexeyDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>alexeyDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="alexeyDataSet2.xss">
-      <DependentUpon>alexeyDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="alexeyDataSet3.xsc">
-      <DependentUpon>alexeyDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="alexeyDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>alexeyDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="alexeyDataSet3.xss">
-      <DependentUpon>alexeyDataSet3.xsd</DependentUpon>
     </None>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
