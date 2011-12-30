@@ -18,6 +18,8 @@ namespace Alexey
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'alexeyDataSet3.vAlexey' table. You can move, or remove it, as needed.
+            this.vAlexeyTableAdapter.Fill(this.alexeyDataSet3.vAlexey);
             // TODO: This line of code loads data into the 'alexeyDataSet.alexey' table. You can move, or remove it, as needed.
             this.alexeyTableAdapter.Fill(this.alexeyDataSet.alexey);
 

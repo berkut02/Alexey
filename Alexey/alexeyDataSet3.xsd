@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="alexeyDataSet3" targetNamespace="http://tempuri.org/alexeyDataSet3.xsd" xmlns:mstns="http://tempuri.org/alexeyDataSet3.xsd" xmlns="http://tempuri.org/alexeyDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="alexeyConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="alexeyConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Alexey.Properties.Settings.GlobalReference.Default.alexeyConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vAlexeyTableAdapter" GeneratorDataComponentClassName="vAlexeyTableAdapter" Name="vAlexey" UserDataComponentName="vAlexeyTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="alexeyConnectionString (Settings)" DbObjectName="alexey.dbo.vAlexey" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT name, kolvo, tsena FROM dbo.vAlexey</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="kolvo" DataSetColumn="kolvo" />
+              <Mapping SourceColumn="tsena" DataSetColumn="tsena" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="alexeyDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="alexeyDataSet3" msprop:Generator_UserDSName="alexeyDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vAlexey" msprop:Generator_TableClassName="vAlexeyDataTable" msprop:Generator_TableVarName="tablevAlexey" msprop:Generator_TablePropName="vAlexey" msprop:Generator_RowDeletingName="vAlexeyRowDeleting" msprop:Generator_UserTableName="vAlexey" msprop:Generator_RowChangingName="vAlexeyRowChanging" msprop:Generator_RowEvHandlerName="vAlexeyRowChangeEventHandler" msprop:Generator_RowDeletedName="vAlexeyRowDeleted" msprop:Generator_RowEvArgName="vAlexeyRowChangeEvent" msprop:Generator_RowChangedName="vAlexeyRowChanged" msprop:Generator_RowClassName="vAlexeyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kolvo" msprop:Generator_ColumnVarNameInTable="columnkolvo" msprop:Generator_ColumnPropNameInRow="kolvo" msprop:Generator_ColumnPropNameInTable="kolvoColumn" msprop:Generator_UserColumnName="kolvo" type="xs:int" minOccurs="0" />
+              <xs:element name="tsena" msprop:Generator_ColumnVarNameInTable="columntsena" msprop:Generator_ColumnPropNameInRow="tsena" msprop:Generator_ColumnPropNameInTable="tsenaColumn" msprop:Generator_UserColumnName="tsena" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

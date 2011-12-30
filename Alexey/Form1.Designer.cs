@@ -36,9 +36,19 @@
             this.alexeyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.alexeyDataSet = new Alexey.alexeyDataSet();
             this.alexeyTableAdapter = new Alexey.alexeyDataSetTableAdapters.alexeyTableAdapter();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.alexeyDataSet3 = new Alexey.alexeyDataSet3();
+            this.vAlexeyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vAlexeyTableAdapter = new Alexey.alexeyDataSet3TableAdapters.vAlexeyTableAdapter();
+            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kolvoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tsenaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.alexeyBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.alexeyDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alexeyDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vAlexeyBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -88,11 +98,58 @@
             // 
             this.alexeyTableAdapter.ClearBeforeFill = true;
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nameDataGridViewTextBoxColumn1,
+            this.kolvoDataGridViewTextBoxColumn1,
+            this.tsenaDataGridViewTextBoxColumn1});
+            this.dataGridView2.DataSource = this.vAlexeyBindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(393, 12);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(351, 242);
+            this.dataGridView2.TabIndex = 1;
+            // 
+            // alexeyDataSet3
+            // 
+            this.alexeyDataSet3.DataSetName = "alexeyDataSet3";
+            this.alexeyDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vAlexeyBindingSource
+            // 
+            this.vAlexeyBindingSource.DataMember = "vAlexey";
+            this.vAlexeyBindingSource.DataSource = this.alexeyDataSet3;
+            // 
+            // vAlexeyTableAdapter
+            // 
+            this.vAlexeyTableAdapter.ClearBeforeFill = true;
+            // 
+            // nameDataGridViewTextBoxColumn1
+            // 
+            this.nameDataGridViewTextBoxColumn1.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn1.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
+            // 
+            // kolvoDataGridViewTextBoxColumn1
+            // 
+            this.kolvoDataGridViewTextBoxColumn1.DataPropertyName = "kolvo";
+            this.kolvoDataGridViewTextBoxColumn1.HeaderText = "kolvo";
+            this.kolvoDataGridViewTextBoxColumn1.Name = "kolvoDataGridViewTextBoxColumn1";
+            // 
+            // tsenaDataGridViewTextBoxColumn1
+            // 
+            this.tsenaDataGridViewTextBoxColumn1.DataPropertyName = "tsena";
+            this.tsenaDataGridViewTextBoxColumn1.HeaderText = "tsena";
+            this.tsenaDataGridViewTextBoxColumn1.Name = "tsenaDataGridViewTextBoxColumn1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(862, 266);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -100,6 +157,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.alexeyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.alexeyDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.alexeyDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vAlexeyBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -114,6 +174,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn kolvoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tsenaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private alexeyDataSet3 alexeyDataSet3;
+        private System.Windows.Forms.BindingSource vAlexeyBindingSource;
+        private alexeyDataSet3TableAdapters.vAlexeyTableAdapter vAlexeyTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kolvoDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tsenaDataGridViewTextBoxColumn1;
     }
 }
 
