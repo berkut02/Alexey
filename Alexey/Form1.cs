@@ -26,9 +26,6 @@ namespace Alexey
 
         }
 
-        private void alexeyBindingSource_CurrentChanged(object sender, EventArgs e)
-        {
 
-        }
     }
 }
