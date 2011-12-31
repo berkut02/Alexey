@@ -26,6 +26,11 @@ namespace Alexey
 
         }
 
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            textBox2.Text = textBox3.Text;
+        }
+
 
     }
 }

@@ -42,7 +42,7 @@
             this.summaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vAlexeyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.alexeyDataSet1 = new Alexey.alexeyDataSet1();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.alexeyTableAdapter = new Alexey.alexeyDataSetTableAdapters.alexeyTableAdapter();
             this.vAlexeyTableAdapter = new Alexey.alexeyDataSet1TableAdapters.vAlexeyTableAdapter();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -152,14 +152,15 @@
             this.alexeyDataSet1.DataSetName = "alexeyDataSet1";
             this.alexeyDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.Location = new System.Drawing.Point(662, 213);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Добавить";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(662, 213);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(94, 23);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "Добавить";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // alexeyTableAdapter
             // 
@@ -230,7 +231,7 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
@@ -265,7 +266,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn kolvoDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn tsenaDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn summaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
