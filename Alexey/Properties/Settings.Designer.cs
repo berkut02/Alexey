@@ -26,8 +26,8 @@ namespace Alexey.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=89RUS-DELL\\SQLEXPRESS;Initial Catalog=alexey;Integrated Security=True" +
-            ";Pooling=False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;Initial Catalog=alexey;Integrated Security=True;Pooling=" +
+            "False")]
         public string alexeyConnectionString {
             get {
                 return ((string)(this["alexeyConnectionString"]));
