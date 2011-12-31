@@ -186,6 +186,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vAlexeyBindingSource, "tsena", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.textBox3.Location = new System.Drawing.Point(586, 216);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(70, 20);
