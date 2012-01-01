@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Alexey.Properties;
 
 namespace Alexey
 {
@@ -29,7 +30,8 @@ namespace Alexey
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            SqlConnection Conn = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=alexey;Integrated Security=True;Pooling=False");
+            //SqlConnection Conn = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=alexey;Integrated Security=True;Pooling=False");
+            SqlConnection Conn = new SqlConnection(Settings.Default.alexeyConnectionString);
 
             SqlCommand CMD = new SqlCommand("InsertData", Conn);
             CMD.CommandType = CommandType.StoredProcedure;
@@ -45,6 +47,9 @@ namespace Alexey
 
             CMD.ExecuteNonQuery();
             Conn.Close();
+
+            alexeyTableAdapter.Fill(alexeyDataSet.alexey);
+            vAlexeyTableAdapter.Fill(alexeyDataSet1.vAlexey);
         }
     }
 }

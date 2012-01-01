@@ -61,7 +61,8 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -71,6 +72,7 @@
             this.dataGridView1.DataSource = this.alexeyBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(3, 12);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(353, 242);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -79,18 +81,21 @@
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
             this.nameDataGridViewTextBoxColumn.HeaderText = "name";
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // kolvoDataGridViewTextBoxColumn
             // 
             this.kolvoDataGridViewTextBoxColumn.DataPropertyName = "kolvo";
             this.kolvoDataGridViewTextBoxColumn.HeaderText = "kolvo";
             this.kolvoDataGridViewTextBoxColumn.Name = "kolvoDataGridViewTextBoxColumn";
+            this.kolvoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tsenaDataGridViewTextBoxColumn
             // 
             this.tsenaDataGridViewTextBoxColumn.DataPropertyName = "tsena";
             this.tsenaDataGridViewTextBoxColumn.HeaderText = "tsena";
             this.tsenaDataGridViewTextBoxColumn.Name = "tsenaDataGridViewTextBoxColumn";
+            this.tsenaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // alexeyBindingSource
             // 
@@ -104,6 +109,8 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -114,6 +121,7 @@
             this.dataGridView2.DataSource = this.vAlexeyBindingSource;
             this.dataGridView2.Location = new System.Drawing.Point(362, 12);
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
             this.dataGridView2.Size = new System.Drawing.Size(449, 184);
             this.dataGridView2.TabIndex = 1;
             // 
@@ -122,18 +130,21 @@
             this.nameDataGridViewTextBoxColumn1.DataPropertyName = "name";
             this.nameDataGridViewTextBoxColumn1.HeaderText = "name";
             this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
+            this.nameDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // kolvoDataGridViewTextBoxColumn1
             // 
             this.kolvoDataGridViewTextBoxColumn1.DataPropertyName = "kolvo";
             this.kolvoDataGridViewTextBoxColumn1.HeaderText = "kolvo";
             this.kolvoDataGridViewTextBoxColumn1.Name = "kolvoDataGridViewTextBoxColumn1";
+            this.kolvoDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // tsenaDataGridViewTextBoxColumn1
             // 
             this.tsenaDataGridViewTextBoxColumn1.DataPropertyName = "tsena";
             this.tsenaDataGridViewTextBoxColumn1.HeaderText = "tsena";
             this.tsenaDataGridViewTextBoxColumn1.Name = "tsenaDataGridViewTextBoxColumn1";
+            this.tsenaDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // summaDataGridViewTextBoxColumn
             // 
