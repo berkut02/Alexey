@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Alexey
 {
@@ -28,9 +29,22 @@ namespace Alexey
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            textBox2.Text = textBox3.Text;
+            SqlConnection Conn = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=alexey;Integrated Security=True;Pooling=False");
+
+            SqlCommand CMD = new SqlCommand("InsertData", Conn);
+            CMD.CommandType = CommandType.StoredProcedure;
+
+            SqlParameter myParm1 = CMD.Parameters.Add("@Name", SqlDbType.NVarChar, 255);
+            myParm1.Value = textBox1.Text;
+            SqlParameter myParm2 = CMD.Parameters.Add("@Kolvo", SqlDbType.Int);
+            myParm2.Value = textBox2.Text;
+            SqlParameter myParm3 = CMD.Parameters.Add("@tsena", SqlDbType.Float);
+            myParm3.Value = textBox3.Text;
+
+            Conn.Open();
+
+            CMD.ExecuteNonQuery();
+            Conn.Close();
         }
-
-
     }
 }
